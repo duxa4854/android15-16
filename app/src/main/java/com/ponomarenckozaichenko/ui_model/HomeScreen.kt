@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.ponomarenckozaichenko.data.Subject
-import com.ponomarenckozaichenko.data.sampleSubject
+import com.ponomarenckozaichenko.data.sampleSubjects
 
 
 @Composable
@@ -115,7 +115,7 @@ fun HomeScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            items(sampleSubject){ subject ->
+            items(sampleSubjects){ subject ->
                 SubjectCard(
                     subject = subject,
                     onClick = {onSubjectClick(subject.id)}
